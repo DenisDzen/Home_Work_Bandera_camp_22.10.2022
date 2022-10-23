@@ -1,3 +1,205 @@
-* {
-    text-decoration: none;
+
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+		
+p, ol, li {
+	line-height: 22px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+		
+p, h1, h2 {
+	margin-left: 15px;
+	margin-bottom: 1px;
+}
+
+h3, h4 {
+	margin-left: 15px;
+	
+}
+
+table {
+    float: right; /* Выравнивание по правому краю */
+    table-layout: fixed;
+    width: 16%;
+    /*border-collapse: collapse;*/
+    border: 2px solid #a2a9b1; /* Параметры рамки */
+    background: #f8f9fa; /* Цвет фона */
+	text-align: left;
+	padding: 0px 0px 0px 12px;
+}
+
+.bokovoe th, td {
+	/*border-collapse: collapse;*/
+}	
+
+
+.contents {
+	background: #f8f9fa; /* Цвет фона */
+	width: 600px; /* Ширина блока */
+	/*padding: 1px;  Поля */
+	border: 2px solid #a2a9b1; /* Параметры рамки */
+	margin-left: 15px; /* Отступ от границы */
+	margin-top: 25px;  /* Отступ от верха */
+}		
+		
+.contents ol {
+	list-style: none;
+	counter-reset: li;
+	padding-left: 1px;
+}
+
+.contents li {
+	padding-left: 35px;
+}
+	
+.contents li:before {
+	counter-increment: li;
+	content: counters(li, ".") ". ";
+}
+		
+figure {
+    float: right; /* Выравнивание по правому краю */
+    border: 1px solid #333; /* Параметры рамки */
+    padding: 7px; /* Поля внутри блока */
+    margin: 10px 0 5px 5px; /* Отступы вокруг */
+    background: #f0f0f0; /* Цвет фона */ 
+	width:12em;
+ }
+
+figcaption {
+    margin: 0 auto 5px; /* Отступы вокруг абзаца */
+	font-size: 13px;
+}
+
+figure>img {
+	width:100%}
+	
+.gen_sovet {
+    float: right; /* Выравнивание по правому краю */
+    border: 1px solid #333; /* Параметры рамки */
+    padding: 7px; /* Поля внутри блока */
+    margin: 10px 0 5px 5px; /* Отступы вокруг */
+    background: #f0f0f0; /* Цвет фона */ 
+	width: 20em;
+ }
+
+.gen_sovet figcaption {
+    margin: 0 auto 5px; /* Отступы вокруг абзаца */
+	font-size: 13px;
+}
+
+.gen_sovet img {
+	width:100%}
+	
+
+.oun {
+    float: right; /* Выравнивание по правому краю */
+    border: 1px solid #333; /* Параметры рамки */
+    padding: 7px; /* Поля внутри блока */
+    margin: 10px 0 5px 5px; /* Отступы вокруг */
+    background: #f0f0f0; /* Цвет фона */ 
+	width: 20em;
+ }
+
+.oun figcaption {
+    margin: 0 auto 5px; /* Отступы вокруг абзаца */
+	font-size: 13px;
+}
+
+.oun img {
+	width:100%}
+	
+.karta {
+    float: right; /* Выравнивание по правому краю */
+    border: 1px solid #333; /* Параметры рамки */
+    padding: 7px; /* Поля внутри блока */
+    margin: 10px 0 5px 5px; /* Отступы вокруг */
+    background: #f0f0f0; /* Цвет фона */ 
+	width: 20em;
+ }
+
+.karta figcaption {
+    margin: 0 auto 5px; /* Отступы вокруг абзаца */
+	font-size: 13px;
+}
+
+.karta img {
+	width:100%}
+	
+.stecko {
+    float: left; /* Выравнивание по правому краю */
+    border: 1px solid #333; /* Параметры рамки */
+    padding: 7px; /* Поля внутри блока */
+    margin: 10px 10px 5px 5px; /* Отступы вокруг */
+    background: #f0f0f0; /* Цвет фона */ 
+	width: 10em; /* Размер картинки*/
+ }
+
+.stecko figcaption {
+    margin: 0 auto 5px; /* Отступы вокруг абзаца */
+	font-size: 13px; /* Размер шрифта*/
+}
+
+.stecko img {
+	width:100%}
+	
+	
+.demonstration {
+    float: right; /* Выравнивание по правому краю */
+    border: 1px solid #333; /* Параметры рамки */
+    padding: 7px; /* Поля внутри блока */
+    margin: 10px 15px 5px 5px; /* Отступы вокруг */
+    background: #f0f0f0; /* Цвет фона */ 
+	width: 22em;/* Размер картинки*/
+ }
+
+.demonstration figcaption {
+    margin: 0 auto 5px; /* Отступы вокруг абзаца */
+	font-size: 13px; /* Размер шрифта*/
+}
+
+.demonstration img {
+	width:100%}
+
+.conclager {
+	float: left; /*Выравнивание по левому краю*/
+	border: 1px solid #333;/*Параметры рамки*/
+	padding: 7px; /*Поля внутри блока*/
+	margin: 10px 15px 5px 5px; /*Отступы вокруг */
+	background: #f0f0f0; /* Цвет фона */ 
+	width: 15em; /* Размер картинки*/
+}
+
+.conclager figcaption {
+	margin: 0 auto 5px; /* Отступы вокруг абзаца */
+	font-size: 13px; /* Размер шрифта*/
+}
+
+.conclager img {
+	width:100%;
+}
+
+.family {
+	float: right; /* Выравнивание по правому краю */
+	border: 1px solid #333;/*Параметры рамки*/
+	padding: 7px; /*Поля внутри блока*/
+	margin: 10px 15px 5px 5px; /*Отступы вокруг */
+	background: #f0f0f0; /* Цвет фона */ 
+	width: 20em; /* Размер картинки*/
+}
+
+.family figcaption {
+	margin: 0 auto 5px; /* Отступы вокруг абзаца */
+	font-size: 13px; /* Размер шрифта*/
+}
+
+.family img {
+	width:100%;
 }
