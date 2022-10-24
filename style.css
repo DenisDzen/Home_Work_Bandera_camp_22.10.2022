@@ -1,5 +1,6 @@
 
 
+/*Підкреслення при наведенні*/
 a {
 	text-decoration: none;
 }
@@ -7,23 +8,27 @@ a {
 a:hover {
 	text-decoration: underline;
 }
-		
+
+/* Формування стилю текста*/		
 p, ol, li {
 	line-height: 22px;
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size: 14px;
 }
-		
+
+/*Відступи заголовків та обзаців*/		
 p, h1, h2 {
 	margin-left: 15px;
 	margin-bottom: 1px;
 }
 
+/*Відступи заголовків*/
 h3, h4 {
 	margin-left: 15px;
 	
 }
 
+/*Справа інформація*/
 table {
     float: right; /* Выравнивание по правому краю */
     table-layout: fixed;
@@ -34,12 +39,31 @@ table {
 	text-align: left;
 	padding: 0px 0px 0px 12px;
 }
-
-.bokovoe th, td {
-	/*border-collapse: collapse;*/
+/* Настройки для всех цитат */
+blockquote {
+	background: #f8f9fa;
+	margin-left: 55px;
+	border-left: 4px solid #eaecf0;
+    padding: 8px 32px;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 22px;
 }	
 
 
+.abwer {
+	background: #f8f9fa;
+	margin-left: 55px;
+	border-left: 4px solid #eaecf0;
+    padding: 8px 32px;
+	font-style: italic;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 22px;
+}
+
+
+/* Зміст */
 .contents {
 	background: #f8f9fa; /* Цвет фона */
 	width: 600px; /* Ширина блока */
@@ -63,7 +87,9 @@ table {
 	counter-increment: li;
 	content: counters(li, ".") ". ";
 }
-		
+
+
+/*Для всіх малюнкиів*/		
 figure {
     float: right; /* Выравнивание по правому краю */
     border: 1px solid #333; /* Параметры рамки */
@@ -80,7 +106,8 @@ figcaption {
 
 figure>img {
 	width:100%}
-	
+
+
 .gen_sovet {
     float: right; /* Выравнивание по правому краю */
     border: 1px solid #333; /* Параметры рамки */
