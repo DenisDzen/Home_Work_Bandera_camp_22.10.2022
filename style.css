@@ -20,7 +20,13 @@ p, ol, li {
 p, h1, h2 {
 	margin-left: 15px;
 	margin-bottom: 1px;
+	
 }
+/* Підкреслювання заголовків*/
+h1, h2 {
+	border-bottom: 1px solid #a2a9b1;
+}
+
 
 /*Відступи заголовків*/
 h3, h4 {
