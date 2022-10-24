@@ -20,18 +20,21 @@ p, ol, li {
 p, h1, h2 {
 	margin-left: 15px;
 	margin-bottom: 1px;
-	
 }
+
+/*Відступи заголовків*/
+h3, h4 {
+	margin-left: 15px;
+}
+
 /* Підкреслювання заголовків*/
 h1, h2 {
 	border-bottom: 1px solid #a2a9b1;
 }
 
-
-/*Відступи заголовків*/
-h3, h4 {
-	margin-left: 15px;
-	
+i {
+	margin-left: 25px;
+	margin-top: 0px;
 }
 
 /*Справа інформація*/
@@ -45,7 +48,7 @@ table {
 	text-align: left;
 	padding: 0px 0px 0px 12px;
 }
-/* Настройки для всех цитат */
+/* Настройки для усіх цитат */
 blockquote {
 	background: #f8f9fa;
 	margin-left: 55px;
