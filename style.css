@@ -1,6 +1,7 @@
+
 /* Меню слева */
 .sidenav {
-    height: 2850%;
+    height: 2860%;
 	width: 170px; /* Set the width of the sidebar */
     position: absolute; /* Позиция меню слева */
     z-index: 1; /* Stay on top */
@@ -11,6 +12,7 @@
 	overflow-y: hidden;	/* Отключение вертикальной прокрутки */
     padding-top: 20px;
 	display: block;
+	border: 1px solid #a7d7f9;
 }
 
 /* Ссылки меню слева */
@@ -53,11 +55,6 @@
     padding: 0px 10px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
 
 /*Підкреслення при наведенні*/
 a {
@@ -117,6 +114,20 @@ table {
 	margin-left: 15px;
 }
 
+/* Подпись-заголовок для картинки справа*/
+
+.bandera {
+	text-align: center; 
+	font-size: 20px;
+}
+
+.bandera-ukr {
+	font-style: italic; 
+	font-weight: 200; 
+	font-size: 15px;
+}
+
+/* Настройки таблицы */
 
 .bokovoe th {
 	vertical-align: top;
@@ -204,7 +215,7 @@ figure>img {
     padding: 7px; /* Поля внутри блока */
     margin: 10px 0 5px 5px; /* Отступы вокруг */
     background: #f0f0f0; /* Цвет фона */ 
-	width: 20em;
+	width: 20em; /*Увеличил размер картинки*/
  }
 
 .gen_sovet figcaption {
@@ -222,7 +233,7 @@ figure>img {
     padding: 7px; /* Поля внутри блока */
     margin: 10px 0 5px 5px; /* Отступы вокруг */
     background: #f0f0f0; /* Цвет фона */ 
-	width: 20em;
+	width: 20em; /*Увеличил размер картинки*/
  }
 
 .oun figcaption {
@@ -239,7 +250,7 @@ figure>img {
     padding: 7px; /* Поля внутри блока */
     margin: 10px 0 5px 5px; /* Отступы вокруг */
     background: #f0f0f0; /* Цвет фона */ 
-	width: 20em;
+	width: 20em; /*Увеличил размер картинки*/
  }
 
 .karta figcaption {
@@ -254,7 +265,7 @@ figure>img {
     float: left; /* Выравнивание по правому краю */
     border: 1px solid #333; /* Параметры рамки */
     padding: 7px; /* Поля внутри блока */
-    margin: 10px 10px 5px 5px; /* Отступы вокруг */
+    margin: 10px 10px 5px 15px; /* Отступы вокруг */
     background: #f0f0f0; /* Цвет фона */ 
 	width: 10em; /* Размер картинки*/
  }
@@ -274,7 +285,7 @@ figure>img {
     padding: 7px; /* Поля внутри блока */
     margin: 10px 15px 5px 5px; /* Отступы вокруг */
     background: #f0f0f0; /* Цвет фона */ 
-	width: 22em;/* Размер картинки*/
+	width: 22em; /* Размер картинки*/
  }
 
 .demonstration figcaption {
@@ -289,7 +300,7 @@ figure>img {
 	float: left; /*Выравнивание по левому краю*/
 	border: 1px solid #333;/*Параметры рамки*/
 	padding: 7px; /*Поля внутри блока*/
-	margin: 10px 15px 5px 5px; /*Отступы вокруг */
+	margin: 10px 15px 5px 15px; /*Отступы вокруг */
 	background: #f0f0f0; /* Цвет фона */ 
 	width: 15em; /* Размер картинки*/
 }
@@ -321,13 +332,3 @@ figure>img {
 	width:100%;
 }
 
-.bandera {
-	text-align: center; 
-	font-size: 20px;
-}
-
-.bandera-ukr {
-	font-style: italic; 
-	font-weight: 200; 
-	font-size: 15px;
-}
