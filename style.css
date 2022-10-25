@@ -1,4 +1,5 @@
 
+/* Общие шрифты для всего*/
 html, body {
 	font-family: sans-serif;
 }
@@ -178,7 +179,7 @@ blockquote {
 	margin-left: 15px; /* Отступ от границы */
 	margin-top: 25px;  /* Отступ от верха */
 }		
-		
+/* Многоуровневая нумерация (нашёл решение в интрнете)*/		
 .contents ol {
 	list-style: none;
 	counter-reset: li;
@@ -215,7 +216,7 @@ figure>img {
 	width:100%
 }
 	
-
+/* Изменения в других картинках по сайту*/
 .gen_sovet {
     float: right; /* Выравнивание по правому краю */
     border: 1px solid #333; /* Параметры рамки */
