@@ -1,4 +1,63 @@
+/* Меню слева */
+.sidenav {
+    height: 2850%;
+	width: 170px; /* Set the width of the sidebar */
+    position: absolute; /* Позиция меню слева */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0; 
+    background-color: #f6f6f6;
+    overflow-x: hidden;/* Отключение горизонтальной прокрутки */
+	overflow-y: hidden;	/* Отключение вертикальной прокрутки */
+    padding-top: 20px;
+	display: block;
+}
 
+/* Ссылки меню слева */
+.sidenav a {
+    padding: 3px 8px 1px 23px;
+    text-decoration: none;
+    font-size: 13px;
+    display: block;
+	margin-bottom: 1px;
+	padding-left: 30px;
+}
+
+.sidenav h3 {
+	color: #54595d;
+	font-size: 0.75em;
+	font-weight: normal;
+	width:63%;
+	margin: 20px 0px 5px 13px;
+	padding-left: 18px;
+	display: table;
+	background-position: center bottom;
+	background-image: linear-gradient(to right,rgba(200,204,209,0) 0,#c8ccd1 33%,#c8ccd1 66%,rgba(200,204,209,0) 100%);
+	background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+}
+
+.sidenav img {
+	padding: 0px 0px 15px 15px;
+}
+
+/* Ссылки при наведение */
+.sidenav a:hover {
+    text-decoration: underline;
+}
+
+/* Страница с большим контентом */
+.main {
+    margin-left: 160px; /* Освободить место для меню слева */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
 
 /*Підкреслення при наведенні*/
 a {
@@ -37,17 +96,38 @@ i {
 	margin-top: 0px;
 }
 
+.sidebar {
+	position: absolute;
+    top: 0;
+    width: 10em;
+    left: 0;
+}
+
 /*Справа інформація*/
 table {
     float: right; /* Выравнивание по правому краю */
     table-layout: fixed;
-    width: 16%;
+    width: 18%;
     /*border-collapse: collapse;*/
     border: 2px solid #a2a9b1; /* Параметры рамки */
     background: #f8f9fa; /* Цвет фона */
 	text-align: left;
-	padding: 0px 0px 0px 12px;
+	padding: 0px 10px 0px 10px;
+	font-size: 90%;
+	margin-left: 15px;
 }
+
+
+.bokovoe th {
+	vertical-align: top;
+}
+
+.bokovoe td {
+	vertical-align: top;
+	padding-bottom: 5px;
+}
+
+
 /* Настройки для усіх цитат */
 blockquote {
 	background: #f8f9fa;
@@ -75,8 +155,7 @@ blockquote {
 /* Зміст */
 .contents {
 	background: #f8f9fa; /* Цвет фона */
-	width: 600px; /* Ширина блока */
-	/*padding: 1px;  Поля */
+	width: 500px; /* Ширина блока */
 	border: 2px solid #a2a9b1; /* Параметры рамки */
 	margin-left: 15px; /* Отступ от границы */
 	margin-top: 25px;  /* Отступ от верха */
@@ -89,7 +168,8 @@ blockquote {
 }
 
 .contents li {
-	padding-left: 35px;
+	padding-left: 25px;
+	font-size: 12px;
 }
 	
 .contents li:before {
@@ -103,7 +183,7 @@ figure {
     float: right; /* Выравнивание по правому краю */
     border: 1px solid #333; /* Параметры рамки */
     padding: 7px; /* Поля внутри блока */
-    margin: 10px 0 5px 5px; /* Отступы вокруг */
+    margin: 10px 0 5px 15px; /* Отступы вокруг */
     background: #f0f0f0; /* Цвет фона */ 
 	width:12em;
  }
@@ -114,8 +194,9 @@ figcaption {
 }
 
 figure>img {
-	width:100%}
-
+	width:100%
+}
+	
 
 .gen_sovet {
     float: right; /* Выравнивание по правому краю */
@@ -238,4 +319,15 @@ figure>img {
 
 .family img {
 	width:100%;
+}
+
+.bandera {
+	text-align: center; 
+	font-size: 20px;
+}
+
+.bandera-ukr {
+	font-style: italic; 
+	font-weight: 200; 
+	font-size: 15px;
 }
